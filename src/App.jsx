@@ -27,7 +27,7 @@ function App() {
         n: 1,
         size: "512x512",
       });
-      console.log(res.data[0].url);
+//      console.log(res.data[0].url);
       setImage(res.data[0].url);
       setLoading(false);
     } catch (error) {
