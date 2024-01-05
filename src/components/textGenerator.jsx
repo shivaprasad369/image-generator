@@ -47,11 +47,14 @@ export default function TextGenerator() {
     
       <button onClick={fetchData}>Search</button>
     </div>
-    {text && !loading ? (
+    <div className="text">
+
+    {!loading ? (
     // <img src={image} alt="images" />): (
-      <p className="text">{text}</p>): (
+      <p >{text}</p>): (
      <><p>Loading...</p><br/><h5>Please wait</h5></>
     )}
+    </div>
   </Container>
 
   )
@@ -99,6 +102,28 @@ const Container = styled.div`
     width:90vw;
     background-color:rgba(0,0,0,0.3)
 
+  }
+  @media only screen and (max-width: 768px) {
+.container {
+  width:100%;
+  padding:1rem;
+  input{
+    width:85%;
+    margin-bottom:1rem;
+ height:3rem;
+  }
+  button{
+    width:50%;
+    border:none;
+    height:2.3rem;
+    font-size:1rem;
+    border-radius:0.3rem;
+    margin-right:2rem;
+  }
+}
+.text{
+  width:78%;
+}
   }
 `;
 

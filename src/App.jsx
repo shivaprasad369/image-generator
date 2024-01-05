@@ -72,5 +72,25 @@ color:white;
 
   }
 }
-  
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.content{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  font-size:1rem;
+  width:100%;
+  .button{
+    gap:1rem;
+    background-color:rgba(0.0.0.0.2);
+    .btn1{
+      gap:1rem;
+      margin-bottom:0.5rem;
+    }
+    .btn2{
+      margin-right:2rem;
+    }
+  }
+}  
+} 
 `;

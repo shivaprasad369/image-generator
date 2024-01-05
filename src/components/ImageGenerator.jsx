@@ -107,6 +107,30 @@ const Container = styled.div`
     border-radius: 0.6rem;
     width:50vw;
   }
+  @media only screen and (max-width: 768px) {
+    .container {
+      width:100%;
+      padding:1rem;
+      input{
+        width:85%;
+        margin-bottom:1rem;
+     height:3rem;
+      }
+      button{
+        width:50%;
+        border:none;
+        height:2.3rem;
+        font-size:1.5rem;
+        border-radius:0.3rem;
+        margin-right:2rem;
+        
+      }
+    }
+    img{
+      width:90%;
+    }
+      }
+    
 `;
 
 
